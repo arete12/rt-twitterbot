@@ -14,11 +14,8 @@ count = 5
 f = open("date.txt", "r+")
 date = f.read()
 
-try:
-    for tweet in api.user_timeline(id=user, count=count):
-        tweets.append((tweet.created_at,tweet.id,tweet.text))
-except BaseException as e:
-    print("failed on_status,",str(e))
+for tweet in api.user_timeline(id=user, count=count):
+    tweets.append((tweet.created_at,tweet.id,tweet.text))
 
 tweetdate = int(str(tweets[0][0]).replace(":","").replace("-","").replace(" ",""))
 
