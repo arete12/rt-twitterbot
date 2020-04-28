@@ -6,3 +6,5 @@ If bot is blocked from specified Twitter account, takes a screenshot of the twee
 ## Dependencies
 * [Tweepy](https://www.tweepy.org/)
 * [twitter_scrapper](https://github.com/bisguzar/twitter-scraper)
+* [Selenium](https://selenium-python.readthedocs.io/)
+* [PIL]
