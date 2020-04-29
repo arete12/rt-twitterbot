@@ -5,6 +5,7 @@ If bot is blocked from specified Twitter account, takes a screenshot of the twee
 
 ## Dependencies
 * [Tweepy](https://www.tweepy.org/)
+
 Only need to install this ones if you want to use the blocked feature:
 * [twitter_scrapper](https://github.com/bisguzar/twitter-scraper)
 * [Selenium](https://selenium-python.readthedocs.io/)
