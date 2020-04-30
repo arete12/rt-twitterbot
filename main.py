@@ -1,6 +1,4 @@
 import tweepy
-import os
-import sys
 
 auth = tweepy.OAuthHandler("", "") # keys
 auth.set_access_token("", "") # access tokens
@@ -30,7 +28,6 @@ try:
 except tweepy.TweepError as e:
     if e.args[0][0]['message'] == "You have been blocked from viewing this user's profile.":
         from twitter_scraper import get_tweets
-        import time
 
         for tweet in get_tweets(user, pages=1): # user whose tweets will be retweeted
             tweets.append((tweet["time"], tweet["isRetweet"], tweet["tweetId"]))
